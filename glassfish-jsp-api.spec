@@ -4,7 +4,7 @@
 
 Name:       glassfish-jsp-api
 Version:    2.2.1
-Release:    8%{?dist}
+Release:    9%{?dist}
 Summary:    Glassfish J2EE JSP API specification
 
 Group:      Development/Libraries
@@ -71,6 +71,9 @@ sed -i "/<bundle.symbolicName>/s/-api//" pom.xml
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.2.1-9
+- Mass rebuild 2013-12-27
+
 * Fri Aug 23 2013 Michal Srb <msrb@redhat.com> - 2.2.1-8
 - Migrate away from mvn-rpmbuild (Resolves: #997486)
 
